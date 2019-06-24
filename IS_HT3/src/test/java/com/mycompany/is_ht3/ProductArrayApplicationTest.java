@@ -158,19 +158,5 @@ public class ProductArrayApplicationTest {
         assertArrayEquals("TEST #8 FAILED!!!", expectedResult, actualResult);
     }
 
-    @Test
-    public void whenSingleZeroPresentInput_thenSingleValuePresentOutput() {
-        System.out.println("TEST #9 - whenSingleZeroPresentInput_thenSingleValuePresentOutput");
-
-        // given
-        long[] input = new long[]{1, 2, 3, 0, 5};
-        long[] expectedResult = new long[]{0, 0, 0, 30, 0};
-
-        // when
-        long[] actualResult = ProductArrayApplication.calculateProductArrayBasic(input);
-
-        // then
-        assertArrayEquals("TEST #9 FAILED!!!", expectedResult, actualResult);
-    }
     
 }
